@@ -5,7 +5,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si"
 
 const about = {
   title: "About me",
-  description: "My name is Guido Contartese, and I am a Fullstack Developer. I find great passion in programming, which is why I have trained as a Full Stack Developer. My skills include proficiency in JavaScript, React, Next, and Redux for client-side views, as well as Node.JS, Express, and Sequelize for server-side operations, and, of course, version control with Git. Additionally, my skills extend to managing relational databases with PostgreSQL, MySQL, and API consumption",
+  description: "I am a Fullstack Developer who find great passion in programming, which is why I have got a degree as a Full Stack Developer. My skills include proficiency in JavaScript, React, Next, and Redux for client-side views, as well as Node.JS, Express, and Sequelize for server-side operations, and, of course, version control with Git. Additionally, my skills extend to managing relational databases with PostgreSQL, MySQL, and API consumption",
   info: [
     {
       fieldName: "Name",
@@ -16,16 +16,16 @@ const about = {
       fieldValue: "(+54) 9 223 5185924"
     },
     {
-      fieldName: "Experience",
-      fieldValue: "1+ Year"
-    },
-    {
       fieldName: "Nationality",
       fieldValue: "Argentinian"
     },
     {
       fieldName: "email",
       fieldValue: "guidocontartese90@gmail.com"
+    },
+    {
+      fieldName: "Experience",
+      fieldValue: "1+ Year"
     },
     {
       fieldName: "Languages",
@@ -37,7 +37,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda odit voluptatibus, recusandae quae, sunt eos molestiae quod quo velit nihil dolores beatae, dolorum cum! Eaque suscipit voluptas fugiat tenetur?",
+  description: "I have been learning and working in the Web development for +1 year",
   items: [
     {
       company: "Tech Solutions Inc.",
@@ -60,7 +60,7 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda odit voluptatibus, recusandae quae, sunt eos molestiae quod quo velit nihil dolores beatae, dolorum cum! Eaque suscipit voluptas fugiat tenetur?",
+  description: "While learning by miself i got graduated from an online Bootcamp and still working in my skills and knowledge",
   items: [
     {
       Institution: "Soy Henry",
@@ -77,7 +77,7 @@ const education = {
 
 const skills = {
   title: "My skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda odit voluptatibus, recusandae quae, sunt eos molestiae quod quo velit nihil dolores beatae, dolorum cum! Eaque suscipit voluptas fugiat tenetur?",
+  description: "This is my tech stack. Focused on the React/JavaScript enviroment and frameworks",
   skillList: [
     {
       icon: <FaHtml5 />,

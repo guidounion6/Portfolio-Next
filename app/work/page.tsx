@@ -17,7 +17,7 @@ const projects = [
     num: "01",
     category: "Fullstack",
     title: "Countries",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque animi fuga aperiam, architecto cum accusantium nam! At repellendus laudantium sit repellat aut, odio tenetur dicta iste iure expedita consequuntur labore?",
+    description: "Complete develop in an Single Page App designed to show information about all worldwide countries, their flags and characteristics",
     stack: [{ name: "JavaScript" }, { name: "React" }, { name: "CSS" }, { name: "Node" }, { name: "Express" }, { name: "PostgreSQL" },],
     image: "/assets/work/thumb1.png",
     live: "",
@@ -25,23 +25,33 @@ const projects = [
   },
   {
     num: "02",
-    category: "Frontend",
-    title: "",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque animi fuga aperiam, architecto cum accusantium nam! At repellendus laudantium sit repellat aut, odio tenetur dicta iste iure expedita consequuntur labore?",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "Html 5" }, { name: "JavaScript" },],
+    category: "Backend",
+    title: "TripInSight",
+    description: "Single Page App made with 5 more people destinated to sell Ecotourist packs arround the world. Here i made part of the Backend doing the mayor structure configuring the routing and the structure of the Handlers and Controllers. Adding to all of this the confection of some models and database tables",
+    stack: [{ name: "JavaScript" }, { name: "React" }, { name: "Redux" }, { name: "Tailwind" }, { name: "Node" }, { name: "Express" }, { name: "MySQL" },],
     image: "/assets/work/thumb2.png",
     live: "",
-    github: "",
+    github: "https://github.com/Veronicayf/TripInSight_server",
   },
   {
     num: "03",
-    category: "Backend",
-    title: "project 3",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque animi fuga aperiam, architecto cum accusantium nam! At repellendus laudantium sit repellat aut, odio tenetur dicta iste iure expedita consequuntur labore?",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "Html 5" }, { name: "JavaScript" },],
+    category: "Frontend",
+    title: "Delivery App",
+    description: "Develop the Frontend of a delivery app completely ",
+    stack: [{ name: "JavaScript" }, { name: "React" }, { name: "Tailwind" },],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "https://deliveryappqdeli.netlify.app/",
+    github: "https://github.com/guidounion6/Delivery-App",
+  },
+  {
+    num: "04",
+    category: "Frontend",
+    title: "Zoom Clone",
+    description: "Zoom clone developed with React, and Next.js",
+    stack: [{ name: "TypeScript" }, { name: "React" }, { name: "Next" }, { name: "Shadcn" }, { name: "Clerk" },],
+    image: "/assets/work/thumb4.png",
+    live: "https://zoom-clone-seven-omega.vercel.app/",
+    github: "https://github.com/guidounion6/Zoom-Clone",
   },
 ]
 
@@ -74,12 +84,12 @@ const Work = () => {
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">{project.category} project</h2>
               <p className="text-white/60 ">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex">
                 {project.stack.map((item, index) => {
                   return (
                     <li key={index} className="text-xl text-accent">
                       {item.name}
-                      {index !== project.stack.length - 1 && ","}
+                      {index !== project.stack.length - 1 && ", "}
                     </li>
                   )
                 })}
@@ -142,7 +152,6 @@ const Work = () => {
           </div>
         </div>
       </div>
-
     </motion.section>
   )
 }

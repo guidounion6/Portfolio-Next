@@ -42,9 +42,7 @@ const Contact = () => {
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl ">
               <h3 className="text-4xl text-accent">Let&apos;s Work Togheter </h3>
-              <p className="text-white/60">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis ipsam similique eius perferendis distinctio incidunt veritatis, aut suscipit porro consequatur ut numquam?
-                Odio facere totam, nihil quos exercitationem ipsum doloribus!
+              <p className="text-white/60">Send me a message to contact me and work togheter
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="Firstname" />
@@ -52,19 +50,6 @@ const Contact = () => {
                 <Input type="email" placeholder="Email address" />
                 <Input type="phone" placeholder="Phone number" />
               </div>
-              <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UX/UI Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
               <Textarea
                 className="h-[200px]"
                 placeholder="Typre your message here."
