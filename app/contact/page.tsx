@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa"
+import Link from "next/link"
 
 const info = [
   {
@@ -40,21 +41,24 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl ">
+            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" method="POST" action="https://formsubmit.co/guidocontartese90@gmail.com">
               <h3 className="text-4xl text-accent">Let&apos;s Work Togheter </h3>
               <p className="text-white/60">Send me a message to contact me and work togheter
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="firstname" placeholder="Firstname" name="name" />
+                <Input type="lastname" placeholder="Lastname" name="lastname" />
+                <Input type="email" placeholder="Email address" name="email" />
+                <Input type="phone" placeholder="Phone number" name="phone" />
               </div>
               <Textarea
                 className="h-[200px]"
                 placeholder="Typre your message here."
+                name="text"
               />
-              <Button size={null} className="max-w-40">Send Message</Button>
+              <Button size={null} className="max-w-40" type="submit" onClick={()=>{
+                <Link href="/home"></Link>
+              }}>Send Message</Button>
             </form>
           </div>
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
