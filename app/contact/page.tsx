@@ -46,15 +46,16 @@ const Contact = () => {
               <p className="text-white/60">Send me a message to contact me and work togheter
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" name="name" />
-                <Input type="lastname" placeholder="Lastname" name="lastname" />
-                <Input type="email" placeholder="Email address" name="email" />
-                <Input type="phone" placeholder="Phone number" name="phone" />
+                <Input type="firstname" placeholder="Firstname" name="name" required/>
+                <Input type="lastname" placeholder="Lastname" name="lastname"  required/>
+                <Input type="email" placeholder="Email address" name="email" required/>
+                <Input type="phone" placeholder="Phone number" name="phone"required />
               </div>
               <Textarea
                 className="h-[200px]"
                 placeholder="Typre your message here."
                 name="text"
+                required
               />
               <Button size={null} className="max-w-40" type="submit" onClick={()=>{
                 <Link href="/home"></Link>
