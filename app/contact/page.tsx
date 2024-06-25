@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa"
 import Link from "next/link"
